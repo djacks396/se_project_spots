@@ -14,4 +14,4 @@ This project is a user friendly image sharing site. The site is responsive to th
 
 This webage is deployed to GitHub Pages
 
-- Deployment Link: https://github.com/djacks396/se_project_spots.git
+- Deployment Link: https://djacks396.github.io/se_project_spots
