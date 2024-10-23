@@ -6,9 +6,9 @@ This project is a user friendly image sharing site. The site is responsive to th
 
 ## Tech Stack
 
--html
--css
--responsive design
+- html
+- css
+- responsive design
 
 ## Deployment
 
