@@ -119,10 +119,7 @@
     margin: 0;
     width: 100%;
     max-width: 288px;
-    padding: 18 32 18px;
     gap: 8px;
-
-    border: 2px;
   }
 
   .profile__name {
