@@ -40,6 +40,9 @@
 
 .modal__close-btn:hover {
   cursor: pointer;
+  transition-property: smooth;
+  transition: 0.1s ease-in-out;
+  opacity: 1;
 }
 
 .modal__title {
@@ -61,6 +64,14 @@
 .modal__input {
   padding: 16px 12px;
   border-radius: 8px;
+  opacity: 70%;
+}
+
+.modal__input:hover {
+  opacity: 1;
+  transition-property: smooth;
+  transition: 0.1s ease-in-out;
+  cursor: pointer;
 }
 
 .modal__submit-btn {
@@ -72,6 +83,9 @@
 }
 
 .modal__submit-btn:hover {
+  opacity: 0.8;
+  transition-property: smooth;
+  transition: 0.1s ease-in-out;
   cursor: pointer;
 }
 
