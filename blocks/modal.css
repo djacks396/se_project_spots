@@ -71,6 +71,10 @@
   color: #fcf5e5;
 }
 
+.modal__submit-btn:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
