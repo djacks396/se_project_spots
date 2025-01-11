@@ -4,6 +4,7 @@
   left: 0;
   bottom: 0;
   right: 0;
+  opacity: 0;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -11,13 +12,18 @@
   justify-content: center;
   padding: 0 20px;
   visibility: hidden;
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
 
 .modal_opened {
   visibility: visible;
+  opacity: 1;
 }
 
 .modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fff;
   max-width: 730px;
   padding: 32px 50px;
@@ -25,6 +31,33 @@
   width: 100%;
   box-sizing: border-box;
   border-radius: 8px;
+}
+.modal__container_type_preview {
+  padding: 0;
+  background-color: transparent;
+  width: unset;
+  display: unset;
+}
+
+.modal__image {
+  width: 100%;
+  object-fit: contain;
+  max-width: 80vw;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  background-color: #212121;
+  padding: 4px 8px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.modal__caption_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .modal__close-btn {
@@ -38,10 +71,17 @@
   background-color: #fff;
 }
 
+.modal__close-btn_type_preview {
+  background-image: url(../images/Close-preview-Icon.svg);
+  top: 0;
+  right: -52.5px;
+  opacity: 1;
+}
+
 .modal__close-btn:hover {
   cursor: pointer;
   transition-property: smooth;
-  transition: 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
   opacity: 1;
 }
 
@@ -85,7 +125,7 @@
 .modal__submit-btn:hover {
   opacity: 0.8;
   transition-property: smooth;
-  transition: 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
   cursor: pointer;
 }
 
