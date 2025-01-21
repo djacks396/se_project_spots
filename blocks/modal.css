@@ -176,4 +176,20 @@
     font-size: 16px;
     margin: 0;
   }
+
+  .modal__image {
+    height: 192px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .modal__container_type_preview {
+    padding: 0;
+    width: 288px;
+    height: 192px;
+  }
+
+  .modal__close-btn_type_preview {
+    top: -50px;
+    left: 240px;
+  }
 }

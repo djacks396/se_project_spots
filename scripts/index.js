@@ -65,7 +65,7 @@ function getCardElement(data) {
 
   cardNameEl.textContent = data.name;
   cardLinkEl.src = data.link;
-  cardLinkEl.alt = data.alt;
+  cardLinkEl.alt = data.name;
 
   cardLikeBtn.addEventListener("click", () => {
     cardLikeBtn.classList.toggle("card__like-btn_liked");
@@ -79,7 +79,7 @@ function getCardElement(data) {
     openModal(previewModal);
     previewModalLinkEl.src = data.link;
     previewModalCaptionEl.textContent = data.name;
-    previewModalCaptionEl.alt = data.alt;
+    previewModalCaptionEl.alt = data.name;
   });
 
   return cardElement;
