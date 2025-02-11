@@ -123,6 +123,14 @@
   cursor: pointer;
 }
 
+.modal__error {
+  color: #ff0000;
+  opacity: 70%;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 17px;
+}
+
 .modal__submit-btn {
   width: 156px;
   padding: 18px 0;
