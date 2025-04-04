@@ -93,11 +93,13 @@ function getCardElement(data) {
 function openModal(modal) {
   modal.classList.add("modal_opened");
   document.addEventListener("keydown", closeModalOnEscape);
+  document.addEventListener("mousedown", handleClickOutsideModal);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
   document.removeEventListener("keydown", closeModalOnEscape);
+  document.removeEventListener("mousedown", handleClickOutsideModal);
 }
 
 function handleEditFormSubmit(evt) {
@@ -158,5 +160,11 @@ function closeModalOnEscape(evt) {
     if (openModal) {
       closeModal(openModal);
     }
+  }
+}
+
+function handleClickOutsideModal(event) {
+  if (event.target.classList.contains("modal_opened")) {
+    closeModal(event.target);
   }
 }
