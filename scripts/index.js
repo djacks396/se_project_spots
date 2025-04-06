@@ -115,7 +115,7 @@ function handleAddCardSubmit(evt) {
   const cardEl = getCardElement(inputValues);
   cardsList.prepend(cardEl);
   evt.target.reset();
-  disableButton(modalSubmitButtons, settings);
+  disableButton(evt.submitter, settings);
   closeModal(cardModal);
 }
 
@@ -151,7 +151,7 @@ cardForm.addEventListener("submit", handleAddCardSubmit);
 
 initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
-  cardsList.prepend(cardElement);
+  cardsList["prepend"](cardElement);
 });
 
 function closeModalOnEscape(evt) {
